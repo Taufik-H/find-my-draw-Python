@@ -1,5 +1,9 @@
-import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
+import tkinter as tk
+import numpy as np
+import Ai
+
+model =Ai.load_ai()
 
 window =tk.Tk()
 
@@ -19,6 +23,16 @@ def draw_image(event):
     tkimage = ImageTk.PhotoImage(img)
     canvas['image'] = tkimage
     canvas.pack()
+    img_board =img.resize((50, 50))
+    img_board = np.array(img_board)
+    img_board = img_board.flatten()
+    output = model.predict([img_board])
+    if(output[0] == 0):
+        print("angry")
+    elif(output[0] == 1):
+        print("sad")
+    else:
+        print("smile")
 
 def start_draw(event):
 
