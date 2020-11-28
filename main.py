@@ -11,12 +11,14 @@ img = Image.new(mode="1", size=(500, 500), color=0 )
 tkimage = ImageTk.PhotoImage(img)
 canvas = tk.Label(window, image=tkimage)
 canvas.pack()
+
 titik_akhir = (0, 0)
 draw = ImageDraw.Draw(img)
-
+prediction = tk.StringVar()
+label = tk.Label(window, textvariable=prediction)
 
 def draw_image(event):
-    global titik_akhir,tkimage
+    global titik_akhir,tkimage, prediction
     titik_gerak = (event.x, event.y)
     draw.line([titik_akhir, titik_gerak], fill=255, width=10)
     titik_akhir = titik_gerak
@@ -28,12 +30,12 @@ def draw_image(event):
     img_board = img_board.flatten()
     output = model.predict([img_board])
     if(output[0] == 0):
-        print("angry")
+        prediction.set("angry")
     elif(output[0] == 1):
-        print("sad")
+        prediction.set("sad")
     else:
-        print("smile")
-
+        prediction.set("smile")
+    label.pack()
 def start_draw(event):
 
     global titik_akhir
@@ -71,5 +73,8 @@ window.bind("<B1-Motion>", draw_image)
 window.bind("<ButtonPress-1>", start_draw)
 window.bind("<ButtonPress-3>", hapus_line)
 window.bind("<Key>", save_image)
+
+
+label.pack()
 window.mainloop()
 
