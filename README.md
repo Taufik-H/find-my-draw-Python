@@ -48,7 +48,7 @@ angka tiga
       a. untuk menyimpan gambar di folder satu tekan  "q"
       b. untuk menyimpan gambar di folder dua tekan   "w"
       c. untuk menyimpan gambar di folder tiga tekan  "e"
-      ```
+ ```
  #
 
 
