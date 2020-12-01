@@ -23,7 +23,15 @@ Run
 ```bash
 python main.py
 ```
+# Objek yang terbaca
 
+angka satu
+angka dua
+angka tiga
+
+# issue
+  terkadang sulit deteksi angka 3
+ (cara fix nya bisa di record ulang datanya perbesar line draw nya)
 
 
 
