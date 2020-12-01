@@ -20,7 +20,7 @@ label = tk.Label(window, textvariable=prediction)
 def draw_image(event):
     global titik_akhir,tkimage, prediction
     titik_gerak = (event.x, event.y)
-    draw.line([titik_akhir, titik_gerak], fill=255, width=10)
+    draw.line([titik_akhir, titik_gerak], fill=255, width=30)
     titik_akhir = titik_gerak
     tkimage = ImageTk.PhotoImage(img)
     canvas['image'] = tkimage
@@ -30,11 +30,11 @@ def draw_image(event):
     img_board = img_board.flatten()
     output = model.predict([img_board])
     if(output[0] == 0):
-        prediction.set("angry")
+        prediction.set("SATU (1)")
     elif(output[0] == 1):
-        prediction.set("sad")
+        prediction.set("DUA (2)")
     else:
-        prediction.set("smile")
+        prediction.set("TIGA (3)")
     label.pack()
 def start_draw(event):
 
@@ -49,23 +49,23 @@ def hapus_line(event):
     canvas['image'] = tkimage
     canvas.pack()
 
-smile = 0
-sad = 0
-angry =0
+satu = 0
+dua = 0
+tiga =0
 
 def save_image(event):
-    global smile,sad,angry
+    global satu, dua, tiga
     img_board = img.resize((50,50))
 
     if(event.char == "q"):
-        img_board.save(f"smile/{smile}.png")
-        smile += 1
+        img_board.save(f"satu/{satu}.png")
+        satu += 1
     elif (event.char == "w"):
-        img_board.save(f"sad/{sad}.png")
-        sad += 1
+        img_board.save(f"dua/{dua}.png")
+        dua += 1
     elif (event.char == "e"):
-        img_board.save(f"angry/{angry}.png")
-        angry += 1
+        img_board.save(f"tiga/{tiga}.png")
+        tiga += 1
         
 
 
