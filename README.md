@@ -35,13 +35,18 @@ angka tiga
  
 # Cara record ulang
 
-  pergi ke file main.py dan ubah kode berikut menjadi komentar
+ 1. pergi ke file main.py dan ubah kode berikut menjadi komentar
   
   ```python
   3
   4    model =Ai.load_ai()
   5
   ```
-  
+ 2. Jalankan file main.py
+ 3. gambar & save 
+      untuk menyimpan gambar di folder satu tekan "q"
+      untuk menyimpan gambar di folder dua tekan "w"
+      untuk menyimpan gambar di folder tiga tekan "e"
+ #
 
 
