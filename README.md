@@ -4,7 +4,7 @@ projek ini hanya untuk saya belajar ai
 
 ## Installation
 
-Use the command [git clone](https://github.com/Taufik-H/find-my-draw-Python.git) to install foobar.
+Use the command [git clone](https://github.com/Taufik-H/find-my-draw-Python.git) to install project.
 
 ```bash
 $ git clone https://github.com/Taufik-H/find-my-draw-Python.git
@@ -32,6 +32,16 @@ angka tiga
 # issue
   terkadang sulit deteksi angka 3
  (cara fix nya bisa di record ulang datanya perbesar line draw nya)
+ 
+# Cara record ulang
 
+  pergi ke file main.py dan ubah kode berikut menjadi komentar
+  
+  ```python
+  3
+  4    model =Ai.load_ai()
+  5
+  ```
+  
 
 
