@@ -43,8 +43,8 @@ angka tiga
   5
   ```
  2. Jalankan file main.py
- 3. gambar & save 
- `` bash
+ 3. gambar & save
+ ``` bash
       a. untuk menyimpan gambar di folder satu tekan  "q"
       b. untuk menyimpan gambar di folder dua tekan   "w"
       c. untuk menyimpan gambar di folder tiga tekan  "e"
