@@ -50,7 +50,8 @@ angka tiga
       b. untuk menyimpan gambar di folder dua tekan   "w"
       c. untuk menyimpan gambar di folder tiga tekan  "e"
  ```
- #note
+ # Note
+ 
  masi awam mengenal python & jika masi kurang bisa tolong kasi saran 
  
  
