@@ -11,7 +11,7 @@ Use the command [git clone](https://github.com/Taufik-H/find-my-draw-Python.git)
 $ git clone https://github.com/Taufik-H/find-my-draw-Python.git
 ```
 
-[Install Pillow](https://pillow.readthedocs.io/), [Numpy](https://numpy.org/install/)& [scikit learn](https://scikit-learn.org/)
+[Install Pillow](https://pillow.readthedocs.io/en/stable/installation.html), [Numpy](https://numpy.org/install/)& [scikit learn](https://scikit-learn.org/stable/install.html)
 ```bash
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install --upgrade Pillow
