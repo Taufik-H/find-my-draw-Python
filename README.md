@@ -19,6 +19,7 @@ $ python3 -m pip install --upgrade Pillow
 ```bash
 $ pip install -U scikit-learn
 ```
+install numpy juga jangan lupa
 Run
 ```bash
 python main.py
@@ -49,6 +50,9 @@ angka tiga
       b. untuk menyimpan gambar di folder dua tekan   "w"
       c. untuk menyimpan gambar di folder tiga tekan  "e"
  ```
- #
+ #note
+ masi awam mengenal python & jika masi kurang bisa tolong kasi saran 
+ 
+ 
 
 
