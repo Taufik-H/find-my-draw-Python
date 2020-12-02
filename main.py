@@ -7,8 +7,14 @@ model =Ai.load_ai()
 
 window =tk.Tk()
 
+
+
 img = Image.new(mode="1", size=(500, 500), color=0 )
 tkimage = ImageTk.PhotoImage(img)
+window.title('TebakKan')
+
+
+
 canvas = tk.Label(window, image=tkimage)
 canvas.pack()
 
