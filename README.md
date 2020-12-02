@@ -2,6 +2,7 @@
 
 projek ini hanya untuk saya belajar ai
 
+![alt text](https://github.com/Taufik-H/find-my-draw-Python/blob/main/testimoni.png)
 ## Installation
 
 Use the command [git clone](https://github.com/Taufik-H/find-my-draw-Python.git) to install project.
