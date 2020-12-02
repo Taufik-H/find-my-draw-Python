@@ -14,13 +14,17 @@ $ git clone https://github.com/Taufik-H/find-my-draw-Python.git
 ```bash
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install --upgrade Pillow
+                or
+$ pip install pillow
 ```
 
 ```bash
 $ pip install -U scikit-learn
 ```
-install numpy juga jangan lupa
-Run
+```bash
+$ pip install numpy
+```
+
 ```bash
 python main.py
 ```
