@@ -15,7 +15,8 @@ $ git clone https://github.com/Taufik-H/find-my-draw-Python.git
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install --upgrade Pillow
 ```
-                or
+Or
+
 ```bash
 $ pip install pillow
 ```
