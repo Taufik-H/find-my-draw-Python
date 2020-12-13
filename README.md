@@ -69,6 +69,8 @@ angka tiga
  ```
  # Note
  
+ Klik kanan untuk hapus 
+ 
  masi awam mengenal python & jika masi kurang bisa tolong kasi saran 
  
  
